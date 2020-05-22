@@ -1,15 +1,16 @@
-<template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+<template lang="pug">
+#app
+  #nav
+    //- router-link(to="/constructor") Constructor
+
+  router-view
 </template>
 
 <style lang="scss">
 #app {
+  width: 1024px;
+  min-height: 100vh;
+  margin: 0 auto;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,7 +19,7 @@
 }
 
 #nav {
-  padding: 30px;
+  // padding: 30px;
 
   a {
     font-weight: bold;
